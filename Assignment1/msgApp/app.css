@@ -1,0 +1,9 @@
+.msg {
+	background-color: powderblue;
+	padding: 11px;
+	margin: 10px 20px;
+}
+
+body {
+	background : linear-gradient(mediumseagreen,slateblue);
+}
