@@ -1,0 +1,33 @@
+body{
+	color: white;
+	background-image:url("mus.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+img{
+	
+}
+
+.layout{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	flex-direction: column;
+
+
+}
+
+.text{
+	margin: 30px;
+	font-size: 40px;
+	font-style: italic;
+	font-family: 'Merienda', cursive;
+
+}
+h1{
+	text-shadow: 6px 8px black;
+}
