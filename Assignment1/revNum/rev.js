@@ -1,8 +1,15 @@
-function myReverse() {
+function myReverse(e) {
 	var output = document.getElementById("output");
 	var num = document.getElementById("num").value;
 
-	var revNum = num.split("").reverse().join("");
+	if (num.match(/^[0-9]+$/) ) {
 
-	output.innerHTML = revNum;
+		var revNum = num.split("").reverse().join("");
+		output.innerHTML = revNum;
+	}
+	else
+	{
+		output.innerHTML = "Please Enter a number"
+	}
+	
 }

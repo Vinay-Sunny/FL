@@ -3,6 +3,8 @@
 	function nonRep () {
 		var output = document.getElementById("output");
 		var str = document.getElementById("str").value;
+		
+		if (str.match(/^[a-z]+$/i)) {
 
 
 		var a=str.split('');
@@ -22,7 +24,15 @@
       			break;
 			}
 		}
+			if(result == ''){
+				output.innerHTML = "All the characters are repeated";
+			}
+			else
 			output.innerHTML = result;
+		}
+		else{
+			output.innerHTML = "Please enter a string containing a - z";
+		}
 	}
 	
 
