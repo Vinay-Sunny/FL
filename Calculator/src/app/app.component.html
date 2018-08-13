@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<body>
+  
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="input"><input value='0'  [(ngModel)]="res" ></div>
+
+      <div class="row1">
+        <button (click)="onClick('7')" >7</button>
+        <button (click)="onClick('8')" >8</button>
+        <button (click)="onClick('9')" >9</button>
+        <button (click)="onClick('/')" >/</button>
+      </div>
+
+      <div class="row1">
+        <button (click)="onClick('4')" >4</button>
+        <button (click)="onClick('5')" >5</button>
+        <button (click)="onClick('6')" >6</button>
+        <button (click)="onClick('*')" >*</button>
+      </div>
+
+      <div class="row1">
+        <button (click)="onClick('1')" >1</button>
+        <button (click)="onClick('2')" >2</button>
+        <button (click)="onClick('3')" >3</button>
+        <button (click)="onClick('-')" >-</button>
+      </div>
+
+      <div class="row1">
+        <button (click)="onClick('.')" >.</button>
+        <button (click)="onClick('0')" >0</button>
+        <button (click)="onClear()" >C</button>
+        <button (click)="onClick('+')" >+</button>
+      </div>
+
+
+      <div class="row1">
+        <button class="submit" (click)="result()" >=</button>
+
+    
+      </div>
+      
+
+
+    </div>
+  </div>
+</div>
+
+
+</body>
