@@ -1,0 +1,6 @@
+<mat-toolbar color="warn">My App</mat-toolbar>
+
+
+
+<app-login *ngIf="!route1" (form1)="hide($event)" [(data)]="form1" ></app-login>
+<app-reg *ngIf="route2" (form2)="show($event)" ></app-reg>
