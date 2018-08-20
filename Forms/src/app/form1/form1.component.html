@@ -1,0 +1,37 @@
+<form class="test" #res="ngForm">
+  <div class="example-form ">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="First Name" name="fName" id="firstname" #fngirstname="ngModel" [(ngModel)]="hero.firstname" >
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Last Name" name="lname" id="lastname" #Lastname="ngModel" [(ngModel)]="hero.lastname" >
+      </mat-form-field> 
+</div>
+<div class="example-form ">
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="Email Id" name="email" [(ngModel)]="hero.email" ><mat-icon matSuffix>email</mat-icon>
+        </mat-form-field> 
+</div>
+<div class="example-form ">
+
+      <mat-form-field class="example-full-width">
+          <span matPrefix>+91 &nbsp;</span>
+          <input style="text-align: center;" type="tel" matInput placeholder="Telephone" name="phone" [(ngModel)]="hero.phone" >
+          <mat-icon matSuffix>call</mat-icon>
+        </mat-form-field>  
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="Age" name="age" [(ngModel)]="hero.age" >
+       </mat-form-field>  
+
+ </div>
+ <div>
+
+    <mat-radio-group>
+        <mat-radio-button value="1" style="margin-right: 20px;">Male</mat-radio-button>
+        <mat-radio-button value="2" >Female</mat-radio-button>
+      </mat-radio-group> 
+</div>
+      <button class="btn" mat-button color="primary" type="button" (click)="navigateForm2(res.value)" >Next</button>
+  </form>
+ 
